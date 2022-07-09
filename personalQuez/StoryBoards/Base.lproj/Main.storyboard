@@ -86,10 +86,10 @@
             </objects>
             <point key="canvasLocation" x="18.75" y="71.83098591549296"/>
         </scene>
-        <!--Вопрос №-->
+        <!--QuestionViewController-->
         <scene sceneID="tBo-YW-3dL">
             <objects>
-                <viewController id="nsM-m6-d33" sceneMemberID="viewController">
+                <viewController title="QuestionViewController" id="nsM-m6-d33" customClass="QuestionViewController" customModule="personalQuez" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pfH-L1-n5v">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -261,10 +261,10 @@
             </objects>
             <point key="canvasLocation" x="1511.25" y="71.83098591549296"/>
         </scene>
-        <!--Результат-->
+        <!--ResultViewController-->
         <scene sceneID="TCR-nO-DBC">
             <objects>
-                <viewController id="7sz-SF-xhh" sceneMemberID="viewController">
+                <viewController title="ResultViewController" id="7sz-SF-xhh" customClass="ResultViewController" customModule="personalQuez" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EAg-Hk-VKL">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -296,6 +296,11 @@
                     </view>
                     <navigationItem key="navigationItem" title="Результат" leftItemsSupplementBackButton="YES" id="05A-lX-XkN">
                         <barButtonItem key="backBarButtonItem" title="Back" id="FCZ-QC-l4R"/>
+                        <barButtonItem key="rightBarButtonItem" title="Done" id="92x-Gt-5QP">
+                            <connections>
+                                <action selector="doneButtonPressed:" destination="7sz-SF-xhh" id="GYF-cr-uE8"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="caJ-BR-HNr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -326,7 +331,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="EJb-Dt-AAu"/>
+        <segue reference="5fH-IU-1qQ"/>
     </inferredMetricsTieBreakers>
     <resources>
         <namedColor name="AccentColor">
